@@ -1,0 +1,128 @@
+<div id="cdp-settings">
+    <div class="inline-drawer">
+        <div class="inline-drawer-toggle inline-drawer-header">
+            <b><i class="fa-solid fa-id-card" aria-hidden="true"></i> 캐릭터 미리보기</b>
+            <div class="inline-drawer-icon fa-solid fa-circle-chevron-down down"></div>
+        </div>
+        <div class="inline-drawer-content">
+            <p class="cdp-help">캐릭터 카드를 눌러 대화 전에 내용을 살펴보세요. 설정은 자동으로 저장됩니다.</p>
+            <section class="cdp-settings-section">
+                <h3>창 크기와 여백</h3>
+                <p class="cdp-help">너비와 높이는 화면 기준입니다. 넓은 화면에서는 기본 너비를, 작은 화면에서는 최대 너비를 기준으로 표시합니다.</p>
+<div class="cdp-setting-row">
+        <label for="cdp-content-width-number">기본 너비</label>
+        <div class="cdp-range-control">
+            <input type="range" id="cdp-content-width" min="30" max="90" step="1" value="50" aria-label="기본 너비" />
+            <div class="cdp-number-control"><input type="number" id="cdp-content-width-number" min="30" max="90" step="1" value="50" aria-label="기본 너비 수치" /><span>%</span></div>
+        </div>
+    </div>
+<div class="cdp-setting-row">
+        <label for="cdp-box-width-number">최대 너비</label>
+        <div class="cdp-range-control">
+            <input type="range" id="cdp-box-width" min="50" max="95" step="1" value="80" aria-label="최대 너비" />
+            <div class="cdp-number-control"><input type="number" id="cdp-box-width-number" min="50" max="95" step="1" value="80" aria-label="최대 너비 수치" /><span>%</span></div>
+        </div>
+    </div>
+<div class="cdp-setting-row">
+        <label for="cdp-box-height-number">최대 높이</label>
+        <div class="cdp-range-control">
+            <input type="range" id="cdp-box-height" min="50" max="95" step="1" value="80" aria-label="최대 높이" />
+            <div class="cdp-number-control"><input type="number" id="cdp-box-height-number" min="50" max="95" step="1" value="80" aria-label="최대 높이 수치" /><span>%</span></div>
+        </div>
+    </div>
+<div class="cdp-setting-row">
+        <label for="cdp-box-padding-number">안쪽 여백</label>
+        <div class="cdp-range-control">
+            <input type="range" id="cdp-box-padding" min="1" max="4" step="0.1" value="2" aria-label="안쪽 여백" />
+            <div class="cdp-number-control"><input type="number" id="cdp-box-padding-number" min="1" max="4" step="0.1" value="2" aria-label="안쪽 여백 수치" /><span>rem</span></div>
+        </div>
+    </div>
+<div class="cdp-setting-row">
+        <label for="cdp-box-border-radius-number">모서리 둥글기</label>
+        <div class="cdp-range-control">
+            <input type="range" id="cdp-box-border-radius" min="0" max="30" step="1" value="12" aria-label="모서리 둥글기" />
+            <div class="cdp-number-control"><input type="number" id="cdp-box-border-radius-number" min="0" max="30" step="1" value="12" aria-label="모서리 둥글기 수치" /><span>px</span></div>
+        </div>
+    </div></section><section class="cdp-settings-section"><h3>색상과 효과</h3>
+    <p class="cdp-help">직접 색을 고르려면 해당 항목의 ‘테마 색상 사용’을 꺼 주세요. HEX 코드도 입력할 수 있습니다.</p>
+<div class="cdp-color-row">
+        <div class="cdp-color-heading"><label for="cdp-font-color">글자색</label>
+            <label class="cdp-theme-toggle"><input type="checkbox" id="cdp-use-theme-font-color" checked /><span>테마 색상 사용</span></label>
+        </div>
+        <div class="cdp-color-control"><input type="color" id="cdp-font-color" value="#ffffff" aria-label="글자색 선택" />
+            <input type="text" id="cdp-font-color-hex" class="cdp-color-hex" value="#ffffff" maxlength="7" spellcheck="false" aria-label="글자색 HEX" placeholder="#RRGGBB" />
+            <span class="cdp-color-mode" id="cdp-font-color-mode"></span>
+        </div>
+    </div>
+<div class="cdp-color-row">
+        <div class="cdp-color-heading"><label for="cdp-background-color">창 배경색</label>
+            <label class="cdp-theme-toggle"><input type="checkbox" id="cdp-use-theme-background-color" checked /><span>테마 색상 사용</span></label>
+        </div>
+        <div class="cdp-color-control"><input type="color" id="cdp-background-color" value="#1a1a1a" aria-label="창 배경색 선택" />
+            <input type="text" id="cdp-background-color-hex" class="cdp-color-hex" value="#1a1a1a" maxlength="7" spellcheck="false" aria-label="창 배경색 HEX" placeholder="#RRGGBB" />
+            <span class="cdp-color-mode" id="cdp-background-color-mode"></span>
+        </div>
+    </div>
+<div class="cdp-color-row">
+        <div class="cdp-color-heading"><label for="cdp-primary-button-color">대화 시작 버튼</label>
+            <label class="cdp-theme-toggle"><input type="checkbox" id="cdp-use-theme-primary-color" checked /><span>테마 색상 사용</span></label>
+        </div>
+        <div class="cdp-color-control"><input type="color" id="cdp-primary-button-color" value="#4a9eff" aria-label="대화 시작 버튼 선택" />
+            <input type="text" id="cdp-primary-button-color-hex" class="cdp-color-hex" value="#4a9eff" maxlength="7" spellcheck="false" aria-label="대화 시작 버튼 HEX" placeholder="#RRGGBB" />
+            <span class="cdp-color-mode" id="cdp-primary-button-color-mode"></span>
+        </div>
+    </div>
+<div class="cdp-color-row">
+        <div class="cdp-color-heading"><label for="cdp-secondary-button-color">닫기 · 이동 버튼</label>
+            <label class="cdp-theme-toggle"><input type="checkbox" id="cdp-use-theme-secondary-color" checked /><span>테마 색상 사용</span></label>
+        </div>
+        <div class="cdp-color-control"><input type="color" id="cdp-secondary-button-color" value="#999999" aria-label="닫기 · 이동 버튼 선택" />
+            <input type="text" id="cdp-secondary-button-color-hex" class="cdp-color-hex" value="#999999" maxlength="7" spellcheck="false" aria-label="닫기 · 이동 버튼 HEX" placeholder="#RRGGBB" />
+            <span class="cdp-color-mode" id="cdp-secondary-button-color-mode"></span>
+        </div>
+    </div><div class="cdp-color-preview" aria-label="색상 미리보기">
+    <strong>이렇게 보여요</strong><p>캐릭터 설명과 첫 메시지가 표시됩니다.</p>
+    <span class="cdp-preview-button cdp-button--primary">대화 시작</span>
+    <span class="cdp-preview-button cdp-button--secondary">닫기</span>
+</div><div class="cdp-setting-row">
+        <label for="cdp-background-opacity-number">창 배경 불투명도</label>
+        <div class="cdp-range-control">
+            <input type="range" id="cdp-background-opacity" min="0" max="100" step="1" value="95" aria-label="창 배경 불투명도" />
+            <div class="cdp-number-control"><input type="number" id="cdp-background-opacity-number" min="0" max="100" step="1" value="95" aria-label="창 배경 불투명도 수치" /><span>%</span></div>
+        </div>
+    </div>
+<div class="cdp-setting-row">
+        <label for="cdp-overlay-opacity-number">바깥 배경 어둡기</label>
+        <div class="cdp-range-control">
+            <input type="range" id="cdp-overlay-opacity" min="0" max="90" step="1" value="70" aria-label="바깥 배경 어둡기" />
+            <div class="cdp-number-control"><input type="number" id="cdp-overlay-opacity-number" min="0" max="90" step="1" value="70" aria-label="바깥 배경 어둡기 수치" /><span>%</span></div>
+        </div>
+    </div>
+<div class="cdp-setting-row">
+        <label for="cdp-blur-strength-number">배경 흐림</label>
+        <div class="cdp-range-control">
+            <input type="range" id="cdp-blur-strength" min="0" max="30" step="1" value="10" aria-label="배경 흐림" />
+            <div class="cdp-number-control"><input type="number" id="cdp-blur-strength-number" min="0" max="30" step="1" value="10" aria-label="배경 흐림 수치" /><span>px</span></div>
+        </div>
+    </div><p class="cdp-help">창 배경 불투명도는 글자와 이미지에 영향을 주지 않습니다. 바깥 배경 어둡기는 미리보기 창 뒤의 화면에만 적용됩니다.</p>
+</section><section class="cdp-settings-section"><h3>이미지와 배치</h3><div class="cdp-setting-row">
+        <label for="cdp-image-max-height-number">캐릭터 이미지 최대 높이</label>
+        <div class="cdp-range-control">
+            <input type="range" id="cdp-image-max-height" min="200" max="600" step="10" value="400" aria-label="캐릭터 이미지 최대 높이" />
+            <div class="cdp-number-control"><input type="number" id="cdp-image-max-height-number" min="200" max="600" step="10" value="400" aria-label="캐릭터 이미지 최대 높이 수치" /><span>px</span></div>
+        </div>
+    </div>
+<div class="cdp-setting-row">
+        <label for="cdp-responsive-breakpoint-number">이미지와 이름을 나란히 놓는 너비</label>
+        <div class="cdp-range-control">
+            <input type="range" id="cdp-responsive-breakpoint" min="400" max="900" step="10" value="700" aria-label="이미지와 이름을 나란히 놓는 너비" />
+            <div class="cdp-number-control"><input type="number" id="cdp-responsive-breakpoint-number" min="400" max="900" step="10" value="700" aria-label="이미지와 이름을 나란히 놓는 너비 수치" /><span>px</span></div>
+        </div>
+    </div><p class="cdp-help">미리보기 창의 너비가 위 기준보다 작으면 이미지와 이름을 위아래로 배치합니다.</p>
+</section><section class="cdp-settings-section"><h3>내용과 표시 순서</h3>
+    <label class="cdp-checkbox" for="cdp-accordion-first-message"><input type="checkbox" id="cdp-accordion-first-message" /><span>첫 메시지를 각각 접고 펼치기</span></label>
+    <p class="cdp-help">끄면 화살표로 첫 메시지를 넘깁니다. 눈 아이콘으로 항목을 숨기고, 화살표로 순서를 바꿀 수 있습니다.</p>
+    <div id="cdp-tab-config" class="cdp-tab-config"></div>
+</section><div class="cdp-settings-footer"><span class="cdp-help">Shift + 클릭: 미리보기 없이 대화 열기</span>
+    <button type="button" id="cdp-reset-settings" class="menu_button"><i class="fa-solid fa-rotate-left" aria-hidden="true"></i> 기본값으로 되돌리기</button>
+</div></div></div></div>
