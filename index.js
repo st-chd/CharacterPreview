@@ -2,8 +2,8 @@ import { eventSource, event_types, characters, selectCharacterById, saveSettings
 import { renderExtensionTemplateAsync } from '../../../extensions.js';
 import { power_user } from '../../../power-user.js';
 
-const extensionName = 'third-party/ST-CharacterPreview';
-const extensionFolder = 'third-party/ST-CharacterPreview';
+const extensionName = 'third-party/CharacterPreview';
+const extensionFolder = 'third-party/CharacterPreview';
 
 // Store reference to currently open box and event handler
 let currentBox = null;
